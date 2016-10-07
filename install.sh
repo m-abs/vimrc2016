@@ -23,15 +23,15 @@ fi
 VIMRC="$HOME/.vimrc"
 NVIMRC="$HOME/.local/share/nvim/init.vim"
 
-cat << EOF > "$VIMRC" 
+cat << EOF > "$VIMRC"
 set runtimepath+=$BASEDIR
 
 source $BASEDIR/config.vim
 EOF
 
-if command_exists nvim; then 
+if command_exists nvim; then
   NVIMRC_DIR=$(dirname $NVIMRC);
-  [ -d "$NIMRC_DIR" ] || mkdir -p "$NVIMRC_DIR"; 
+  [ -d "$NIMRC_DIR" ] || mkdir -p "$NVIMRC_DIR";
   [ -f "$NVIMRC" ] && rm "$NVIMRC";
   ln -s $VIMRC $NVIMRC
 fi

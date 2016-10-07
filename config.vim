@@ -25,3 +25,4 @@ set si "Smart indent
 
 source $HOME/.vim/vimrcs/undo.vim
 source $HOME/.vim/vimrcs/tabs.vim
+source $HOME/.vim/bundle/vim-better-whitespace/plugin/better-whitespace.vim
