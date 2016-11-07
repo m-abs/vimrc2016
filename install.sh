@@ -9,6 +9,8 @@ BASEDIR=$(cd $(dirname $0); pwd -P);
 git submodule init
 git submodule update --init --recursive
 
+./update.sh
+
 if [ -f "$HOME/.vimrc" ]; then
 	echo "vimrc already exists, do you want to overwrite it?"
 	select yn in "Yes" "No"; do
