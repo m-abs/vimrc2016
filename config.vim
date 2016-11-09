@@ -56,5 +56,9 @@ set tabstop=2
 set ai "Auto indent
 set si "Smart indent
 
+colorscheme murphy
+
 source $HOME/.vim/vimrcs/undo.vim
 source $HOME/.vim/vimrcs/tabs.vim
+source $HOME/.vim/vimrcs/yankring.vim
+source $HOME/.vim/vimrcs/visual.vim
