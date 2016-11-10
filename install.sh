@@ -8,6 +8,7 @@ BASEDIR=$(cd $(dirname $0); pwd -P);
 
 git submodule init
 git submodule update --init --recursive
+(cd bundle/vimproc.vim && make);
 
 if [ -f "$HOME/.vimrc" ]; then
 	echo "vimrc already exists, do you want to overwrite it?"
