@@ -10,6 +10,8 @@ git submodule init
 git submodule update --init --recursive
 (cd bundle/vimproc.vim && make);
 
+./update.sh
+
 if [ -f "$HOME/.vimrc" ]; then
 	echo "vimrc already exists, do you want to overwrite it?"
 	select yn in "Yes" "No"; do
