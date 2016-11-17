@@ -19,3 +19,18 @@
 [submodule "bundle/yankring.vim"]
 	path = bundle/yankring.vim
 	url = git@github.com:vim-scripts/YankRing.vim.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule "bundle/deoplete.nvim"]
+	path = bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule "bundle/deoplete-typescript"]
+	path = bundle/deoplete-typescript
+	url = git@github.com:mhartington/deoplete-typescript.git
+[submodule "bundle/deoplete-zsh"]
+	path = bundle/deoplete-zsh
+	url = git@github.com:zchee/deoplete-zsh.git
+[submodule "bundle/deoplete-docker"]
+	path = bundle/deoplete-docker
+	url = git@github.com:zchee/deoplete-docker.git

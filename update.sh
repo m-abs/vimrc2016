@@ -14,3 +14,5 @@ git submodule foreach git pull
 git add -p
 
 cd $HERE/bundle/vimproc.vim && make
+nvim -c UpdateRemotePlugins
+nvim -c CheckHealth

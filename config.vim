@@ -68,8 +68,14 @@ set si "Smart indent
 
 colorscheme murphy
 
+let g:android_sdk_path = $ANDROID_HOME
+
 source $HOME/.vim/vimrcs/undo.vim
 source $HOME/.vim/vimrcs/tabs.vim
 source $HOME/.vim/vimrcs/yankring.vim
 source $HOME/.vim/vimrcs/visual.vim
 source $HOME/.vim/vimrcs/search.vim
+source $HOME/.vim/vimrcs/java.vim
+source $HOME/.vim/vimrcs/ultisnips.vim
+
+let g:deoplete#enable_at_startup = 1
