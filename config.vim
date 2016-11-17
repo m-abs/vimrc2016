@@ -13,6 +13,16 @@ set ffs=unix,dos
 set modeline
 set tw=0
 
+colorscheme murphy
+
+" Tell vim to remember certain things when we exit
+"  '10  :  marks will be remembered for up to 10 previously edited files
+"  "100 :  will save up to 100 lines for each register
+"  :20  :  up to 20 lines of command-line history will be remembered
+"  %    :  saves and restores the buffer list
+"  n... :  where to save the viminfo files
+set viminfo='10,\"100,:20,%,n~/.viminfo
+
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
@@ -62,3 +72,4 @@ source $HOME/.vim/vimrcs/undo.vim
 source $HOME/.vim/vimrcs/tabs.vim
 source $HOME/.vim/vimrcs/yankring.vim
 source $HOME/.vim/vimrcs/visual.vim
+source $HOME/.vim/vimrcs/search.vim
