@@ -5,3 +5,5 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 "let g:UltiSnipsSnippetsDir = $HOME.'/ownCloud/ultisnips'
 
 "call system('mkdir ' . g:UltiSnipsSnippetsDir)
+
+au FileType typescript UltiSnipsAddFiletypes ts
