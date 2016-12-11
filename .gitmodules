@@ -9,28 +9,28 @@
 	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = http://github.com/editorconfig/editorconfig-vim.git
 [submodule "bundle/scss-syntax.vim"]
 	path = bundle/scss-syntax.vim
-	url = git://github.com/cakebaker/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim.git
 [submodule "bundle/vim-better-whitespace"]
 	path = bundle/vim-better-whitespace
-	url = git@github.com:ntpeters/vim-better-whitespace.git
+	url = http://github.com/ntpeters/vim-better-whitespace.git
 [submodule "bundle/yankring.vim"]
 	path = bundle/yankring.vim
-	url = git@github.com:vim-scripts/YankRing.vim.git
+	url = http://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
-	url = git@github.com:SirVer/ultisnips.git
+	url = http://github.com/SirVer/ultisnips.git
 [submodule "bundle/deoplete.nvim"]
 	path = bundle/deoplete.nvim
-	url = git@github.com:Shougo/deoplete.nvim.git
+	url = http://github.com/Shougo/deoplete.nvim.git
 [submodule "bundle/deoplete-typescript"]
 	path = bundle/deoplete-typescript
-	url = git@github.com:mhartington/deoplete-typescript.git
+	url = http://github.com/mhartington/deoplete-typescript.git
 [submodule "bundle/deoplete-zsh"]
 	path = bundle/deoplete-zsh
-	url = git@github.com:zchee/deoplete-zsh.git
+	url = http://github.com/zchee/deoplete-zsh.git
 [submodule "bundle/deoplete-docker"]
 	path = bundle/deoplete-docker
-	url = git@github.com:zchee/deoplete-docker.git
+	url = http://github.com/zchee/deoplete-docker.git
