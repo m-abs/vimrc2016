@@ -1,0 +1,24 @@
+snippet ng2service
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class ${1}Service {
+  $0
+}
+endsnippet
+
+snippet ngOnInit
+ngOnInit() {
+  console.log(\`$1.ngOnInit()\`);
+}
+endsnippet
+
+snippet ngOnDestroy
+ngOnDestroy() {
+  console.log(\`$1.ngOnDestroy()\`);
+}
+endsnippet
+
+snippet consolecomponent
+console.log(\`$1.$2()\`);
+endsnippet
