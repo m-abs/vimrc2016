@@ -34,3 +34,6 @@
 [submodule "bundle/deoplete-docker"]
 	path = bundle/deoplete-docker
 	url = http://github.com/zchee/deoplete-docker.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
