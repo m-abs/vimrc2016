@@ -7,5 +7,5 @@ let g:UltiSnipsEditSplit="vertical"
 
 "call system('mkdir ' . g:UltiSnipsSnippetsDir)
 
-au FileType typescript UltiSnipsAddFiletypes ts
+au FileType typescript UltiSnipsAddFiletypes typescript
 au FileType html UltiSnipsAddFiletypes html-ng2-ns

@@ -28,7 +28,7 @@ snippet nsactionitemright "{N} Action Item on the Right"
 endsnippet
 
 snippet nsactionbarback "{N} Action Bar with Back"
-<ActionBar title="Title" icon="" class="action-bar">
+<ActionBar title="$1" icon="" class="action-bar">
   <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
 </ActionBar>
 endsnippet
@@ -240,12 +240,12 @@ endsnippet
 
 snippet nstabview "{N} Tab View"
 <TabView #tabView>
-  <TabViewItem title="Tab 1">
+  <StackLayout *tabItem="{title: 'Tab 1'}">
     <Label text="This is Label in Tab 1"></Label>
-  </TabViewItem>
-  <TabViewItem title="Tab 2">
+  </StackLayout>
+  <StackLayout *tabItem="{title: 'Tab 2'">
     <Label text="This is Label in Tab 2"></Label>
-  </TabViewItem>
+  </StackLayout>
 </TabView>
 $1
 endsnippet
