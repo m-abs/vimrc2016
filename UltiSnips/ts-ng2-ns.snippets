@@ -1,0 +1,444 @@
+
+snippet nscomponent_template "{N} Component with template"
+import {Component} from '@angular/core';
+
+@Component({
+  selector: '$1',
+  template: `
+    <StackLayout>
+      <Label text="Sample"></Label>
+    </StackLayout>
+  `
+})
+export class $2 {
+
+  constructor() {
+
+  }
+}
+endsnippet
+
+snippet nscomponent_templateUrl "{N} Component with templateUrl"
+import {Component} from '@angular/core';
+
+@Component({
+  selector: '$1',
+  templateUrl: `$2`
+})
+export class $3 {
+
+  constructor() {
+
+  }
+}
+endsnippet
+
+snippet nsactionbar "{N} Action Bar"
+<ActionBar title="Title" icon="" class="action-bar">
+</ActionBar>
+endsnippet
+
+snippet nsactionbaritems "{N} Action Bar with Action Items"
+<ActionBar title="Title" icon="" class="action-bar">
+  <ActionItem (tap)="">
+    <Button class="" text="Left" class="action-item"></Button>
+  </ActionItem>
+  <ActionItem (tap)="" ios.position="right">
+    <Button class="" text="Right" class="action-item"></Button>
+  </ActionItem>
+</ActionBar>
+endsnippet
+
+snippet nsactionitem "{N} Action Item"
+<ActionItem (tap)="">
+  <Button class="" text="Left" class="action-item"></Button>
+</ActionItem>
+endsnippet
+
+snippet nsactionitemright "{N} Action Item on the Right"
+<ActionItem (tap)="" ios.position="right">
+  <Button class="" text="Right" class="action-item"></Button>
+</ActionItem>
+endsnippet
+
+snippet nsactionbarback "{N} Action Bar with Back"
+<ActionBar title="$1" icon="" class="action-bar">
+  <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+endsnippet
+
+snippet nsactionbarnavbtn "{N} Navigation Button"
+<NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+endsnippet
+
+snippet nsactionbarcustomtitle "{N} Action Bar with Custom Title"
+<ActionBar class="action-bar">
+  <StackLayout orientation="horizontal"
+    ios:horizontalAlignment="center"
+    android:horizontalAlignment="left">
+    <Label text="$1" class="action-title"></Label>
+  </StackLayout>
+  <ActionItem (tap)="$2" ios.position="right">
+    <Button class="" text="Right" class="action-item"></Button>
+  </ActionItem>
+</ActionBar>
+endsnippet
+
+snippet nsflexbox "{N} Flexbox Layout"
+<FlexboxLayout>
+    $1
+</FlexboxLayout>
+endsnippet
+
+snippet nsflexbox_column "{N} Flexbox Layout Column"
+<FlexboxLayout flexDirection="column">
+    $1
+</FlexboxLayout>
+endsnippet
+
+snippet nsstack "{N} Stack Layout"
+<StackLayout>
+    $1
+</StackLayout>
+endsnippet
+
+snippet nsstack_horizontal "{N} Stack Layout Horizontal"
+<StackLayout orientation="horizontal">
+    $1
+</StackLayout>
+endsnippet
+
+snippet nswrap "{N} Wrap Layout"
+<WrapLayout orientation="horizontal" itemWidth="$1" itemHeight="$2">
+    $3
+</WrapLayout>
+endsnippet
+
+snippet nsabsolute "{N} Absolute Layout"
+<AbsoluteLayout>
+    <Label text="This is Label 1" top="" right="" bottom="" left=""></Label>
+    $1
+</AbsoluteLayout>
+endsnippet
+
+snippet nsdock "{N} Dock Layout"
+<DockLayout stretchLastChild="true">
+    <Label dock="top" text="I am on top!"></Label>
+</DockLayout>
+endsnippet
+
+snippet nsgrid "{N} Grid Layout"
+<GridLayout rows="$1" columns="$2">
+    $3
+</GridLayout>
+endsnippet
+
+snippet nsgrid_2x2 "{N} Grid Layout 2x2"
+<GridLayout rows="*, *" columns="*, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsgrid_2x2_auto "{N} Grid Layout 2x2 Automatic Width/Height"
+<GridLayout rows="auto, auto" columns="auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsgrid_3x3 "{N} Grid Layout 3x3 "
+<GridLayout rows="*, *, *" columns="*, *, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsgrid_3x3_auto "{N} Grid Layout 3x3 Automatic Width/Height"
+<GridLayout rows="auto, auto, auto" columns="auto, auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsgrid_4x3 "{N} Grid Layout 4x3 "
+<GridLayout rows="*, *, *, *" columns="*, *, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsgrid_4x3_auto "{N} Grid Layout 4x3 Automatic Width/Height"
+<GridLayout rows="auto, auto, auto, auto" columns="auto, auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsgrid_4x4 "{N} Grid Layout 4x4"
+<GridLayout rows="*, *, *, *" columns="*, *, *, *">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="0, 3" row="0" col="3"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="1, 3" row="1" col="3"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="2, 3" row="2" col="3"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+    <Label text="3, 3" row="3" col="3"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsgrid_4x4_auto "{N} Grid Layout 4x4 Automatic Width/Height"
+<GridLayout rows="auto, auto, auto, auto" columns="auto, auto, auto, auto">
+    <Label text="0, 0" row="0" col="0"></Label>
+    <Label text="0, 1" row="0" col="1"></Label>
+    <Label text="0, 2" row="0" col="2"></Label>
+    <Label text="0, 3" row="0" col="3"></Label>
+    <Label text="1, 0" row="1" col="0"></Label>
+    <Label text="1, 1" row="1" col="1"></Label>
+    <Label text="1, 2" row="1" col="2"></Label>
+    <Label text="1, 3" row="1" col="3"></Label>
+    <Label text="2, 0" row="2" col="0"></Label>
+    <Label text="2, 1" row="2" col="1"></Label>
+    <Label text="2, 2" row="2" col="2"></Label>
+    <Label text="2, 3" row="2" col="3"></Label>
+    <Label text="3, 0" row="3" col="0"></Label>
+    <Label text="3, 1" row="3" col="1"></Label>
+    <Label text="3, 2" row="3" col="2"></Label>
+    <Label text="3, 3" row="3" col="3"></Label>
+</GridLayout>
+endsnippet
+
+snippet nsscrollview "{N} Scroll View"
+<ScrollView>
+    $1
+</ScrollView>
+endsnippet
+
+snippet nslistview "{N} List View"
+<ListView [items]="source" (loaded)="onLoaded($event)" (itemLoading)="onItemLoading($event)" (itemTap)="onItemTap($event)" class="list-group">
+    <template let-item="item" let-odd="odd" let-even="even">
+      <StackLayout>
+        <Label [text]="item.title" class="list-group-item"></Label>
+        $1
+      </StackLayout>
+    </template>
+</ListView>
+endsnippet
+
+snippet nstabview "{N} Tab View"
+<TabView #tabView>
+  <StackLayout *tabItem="{title: 'Tab 1'}">
+    <Label text="This is Label in Tab 1"></Label>
+  </StackLayout>
+  <StackLayout *tabItem="{title: 'Tab 2'">
+    <Label text="This is Label in Tab 2"></Label>
+  </StackLayout>
+</TabView>
+$1
+endsnippet
+
+snippet nswebview "{N} Web View"
+<WebView src="someUrl | pathToLocalFile | htmlString"></WebView>
+$1
+endsnippet
+
+snippet nsimg "{N} Image"
+<Image src="$1"></Image>
+$2
+endsnippet
+
+snippet nslabel "{N} Label"
+<Label text="$1" textWrap="true"></Label>
+$2
+endsnippet
+
+snippet nsbtn "{N} Button"
+<Button text="$1" (tap)="$2"></Button>
+$3
+endsnippet
+
+snippet nstextfield "{N} Text Field"
+<TextField hint="$1" text="$2"></TextField>
+$3
+endsnippet
+
+snippet nspassword "{N} Password Field"
+<TextField hint="Enter your password." text="$1" secure="true"></TextField>
+$2
+endsnippet
+
+snippet nstextview_editable "{N} Editable TextView"
+<TextView hint="$1" text="$2" editable="true"></TextView>
+$3
+endsnippet
+
+snippet nstextview_non-editable "{N} Non-Editable TextView"
+<TextView text="$1" editable="false"></TextView>
+$2
+endsnippet
+
+snippet nssearchbar "{N} SearchBar"
+<SearchBar id="${1:searchBar}" hint="${2:Search}" text="$3" (clear)="${4:onClear}" (submit)="${5:onSubmit}" class="search-bar"></SearchBar>
+$6
+endsnippet
+
+snippet nsswitch "{N} Switch"
+<Switch [checked]="$1" class="switch"></Switch>
+$2
+endsnippet
+
+snippet nsprogress "{N} Progress Bar"
+<Progress [value]="$1" class="progress"></Progress>
+$2
+endsnippet
+
+snippet nsslider "{N} Slider"
+<Slider [minValue]="$1" [maxValue]="$2" [value]="$3" class="slider"></Slider>
+$4
+endsnippet
+
+snippet nsdate "{N} Date Picker"
+<DatePicker [day]="$1" [month]="$2" [year]="$3"></DatePicker>
+$4
+endsnippet
+
+snippet nstime "{N} Time Picker"
+<TimePicker [hour]="$1" [minute]="$2"></TimePicker>
+$3
+endsnippet
+
+snippet nslistpicker "{N} List Picker"
+<ListPicker [items]="$1" [(ngModel)]="$2"></ListPicker>
+$3
+endsnippet
+
+snippet nsloading "{N} Activity Indicator"
+<ActivityIndicator width="100" height="100" [busy]="$1" class="activity-indicator"></ActivityIndicator>
+$2
+endsnippet
+
+snippet nssegmentedbar "{N} Segmented Bar"
+<SegmentedBar [items]="$1" [(ngModel)]="$2">
+</SegmentedBar>
+endsnippet
+
+snippet nsborder "{N} Border"
+<Border borderRadius="$1" borderWidth="$2" borderColor="#000000">
+    $3
+</Border>
+endsnippet
+
+snippet css "{N} CSS Class Attribute"
+class="$1"$2
+endsnippet
+
+snippet text "{N} Text Attribute"
+text="$1"$2
+endsnippet
+
+snippet textbinding "{N} Text Binding Attribute"
+[text]="$1"$2
+endsnippet
+
+snippet icon "{N} Icon Attribute"
+icon="res://$1"$2
+endsnippet
+
+snippet tap "{N} Tap Attribute"
+(tap)="$1"$2
+endsnippet
+
+snippet wrap "{N} Text Wrap Attribute"
+textWrap="true"$2
+endsnippet
+
+snippet halign "{N} Horizontal Alignment Attribute"
+horizontalAlignment="$1"$2
+endsnippet
+
+snippet valign "{N} Vertical Alignment Attribute"
+verticalAlignment="$1"$2
+endsnippet
+
+snippet visibility "{N} Visibility Attribute"
+[visibility]="isItemVisible ? 'visible' : 'collapsed'"$2
+endsnippet
+
+snippet stretch "{N} Stretch Attribute"
+stretch="fill$1"$2
+endsnippet
+
+snippet kbtype "{N} Keyboard Type Attribute"
+keyboardType="email$1"$2
+endsnippet
+
+snippet row "{N} Row Attribute"
+row="$1"$2
+endsnippet
+
+snippet col "{N} Column Attribute"
+col="$1"$2
+endsnippet
+
+snippet colspan "{N} Colspan Attribute"
+colSpan="$1"$2
+endsnippet
+
+snippet rowspan "{N} Rowspan Attribute"
+rowSpan="$1"$2
+endsnippet
+
+snippet width "{N} Width Attribute"
+width="$1"$2
+endsnippet
+
+snippet height "{N} Height Attribute"
+height="$1"$2
+endsnippet
