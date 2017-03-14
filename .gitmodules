@@ -25,9 +25,6 @@
 [submodule "bundle/deoplete.nvim"]
 	path = bundle/deoplete.nvim
 	url = http://github.com/Shougo/deoplete.nvim.git
-[submodule "bundle/deoplete-typescript"]
-	path = bundle/deoplete-typescript
-	url = http://github.com/mhartington/deoplete-typescript.git
 [submodule "bundle/deoplete-zsh"]
 	path = bundle/deoplete-zsh
 	url = http://github.com/zchee/deoplete-zsh.git
