@@ -11,8 +11,9 @@ git submodule foreach git clean -d -x -f
 git submodule foreach git fetch
 git submodule foreach git checkout master
 git submodule foreach git pull
+(cd bundle/tsuquyomi && npm i)
 git add -p
 
 cd $HERE/bundle/vimproc.vim && make
-nvim -c UpdateRemotePlugins
-nvim -c CheckHealth
+nvim +UpdateRemotePlugins +qall
+nvim +CheckHealth
