@@ -2,8 +2,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
-"let g:UltiSnipsSnippetsDir = $HOME.'/ownCloud/ultisnips'
+au FileType javascript UltiSnipsAddFiletypes js
 
-"call system('mkdir ' . g:UltiSnipsSnippetsDir)
-
+au FileType typescript UltiSnipsAddFiletypes js
 au FileType typescript UltiSnipsAddFiletypes ts
