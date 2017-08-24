@@ -1,7 +1,3 @@
-if has("folding")
-  au FileType javascript setl foldlevel=4
-endif
-
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -35,47 +31,14 @@ cabbrev E Explore
 "Always show current position
 set ruler
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Searching
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Highlight search results
-set hlsearch
-
-" Makes search act like search in modern browsers
-set incsearch
-
-" Show matching brackets when text indicator is over them
-set showmatch
-" How many tenths of a second to blink when matching brackets
-set mat=2
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
-set expandtab
-
-" Be smart when using tabs ;)
-set smarttab
-
-" 1 tab == 2 spaces
-set shiftwidth=2
-set tabstop=2
-
-set ai "Auto indent
-set si "Smart indent
-
-colorscheme murphy
-
-let g:android_sdk_path = $ANDROID_HOME
-
-source $HOME/.vim/vimrcs/undo.vim
-source $HOME/.vim/vimrcs/tabs.vim
-source $HOME/.vim/vimrcs/yankring.vim
-source $HOME/.vim/vimrcs/visual.vim
-source $HOME/.vim/vimrcs/search.vim
+source $HOME/.vim/vimrcs/deoplete.vim
+source $HOME/.vim/vimrcs/folding.vim
 source $HOME/.vim/vimrcs/java.vim
+"source $HOME/.vim/vimrcs/nerdtree.vim
+source $HOME/.vim/vimrcs/search.vim
+source $HOME/.vim/vimrcs/tabs.vim
+source $HOME/.vim/vimrcs/text.vim
 source $HOME/.vim/vimrcs/ultisnips.vim
-
-let g:deoplete#enable_at_startup = 1
+source $HOME/.vim/vimrcs/undo.vim
+source $HOME/.vim/vimrcs/visual.vim
+source $HOME/.vim/vimrcs/yankring.vim

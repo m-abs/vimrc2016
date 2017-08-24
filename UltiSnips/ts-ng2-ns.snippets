@@ -1,0 +1,33 @@
+snippet nscomponent_template "{N} Component with template"
+import {Component} from '@angular/core';
+
+@Component({
+  selector: '$1',
+  template: `
+    <StackLayout>
+      <Label text="Sample"></Label>
+    </StackLayout>
+  `
+})
+export class $2 {
+
+  constructor() {
+
+  }
+}
+endsnippet
+
+snippet nscomponent_templateUrl "{N} Component with templateUrl"
+import {Component} from '@angular/core';
+
+@Component({
+  selector: '$1',
+  templateUrl: `$2`
+})
+export class $3 {
+
+  constructor() {
+
+  }
+}
+endsnippet
