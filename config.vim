@@ -34,7 +34,7 @@ set ruler
 source $HOME/.vim/vimrcs/deoplete.vim
 source $HOME/.vim/vimrcs/folding.vim
 source $HOME/.vim/vimrcs/java.vim
-"source $HOME/.vim/vimrcs/nerdtree.vim
+source $HOME/.vim/vimrcs/nerdtree.vim
 source $HOME/.vim/vimrcs/search.vim
 source $HOME/.vim/vimrcs/tabs.vim
 source $HOME/.vim/vimrcs/text.vim
@@ -42,3 +42,4 @@ source $HOME/.vim/vimrcs/ultisnips.vim
 source $HOME/.vim/vimrcs/undo.vim
 source $HOME/.vim/vimrcs/visual.vim
 source $HOME/.vim/vimrcs/yankring.vim
+source $HOME/.vim/vimrcs/typescript.vim

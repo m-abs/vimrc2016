@@ -37,3 +37,6 @@
 [submodule "bundle/deoplete-typescript"]
 	path = bundle/deoplete-typescript
 	url = http://github.com/mhartington/deoplete-typescript.git
+[submodule "vim-javacomplete2"]
+	path = bundle/vim-javacomplete2
+	url = https://github.com/artur-shaik/vim-javacomplete2.git
