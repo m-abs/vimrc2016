@@ -1,11 +1,10 @@
 let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets= '<c-l>'
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
-"let g:UltiSnipsSnippetsDir = $HOME.'/ownCloud/ultisnips'
+au FileType javascript UltiSnipsAddFiletypes js
+au FileType typescript UltiSnipsAddFiletypes ts
 
-"call system('mkdir ' . g:UltiSnipsSnippetsDir)
-
-au FileType typescript UltiSnipsAddFiletypes typescript
-au FileType html UltiSnipsAddFiletypes html-ng2-ns
+let g:UltiSnipsSnippetDirectories=[$HOME."/.vim/UltiSnips", $HOME."/.vim/bundle/yats.vim/UltiSnips"]
