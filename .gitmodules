@@ -1,9 +1,6 @@
 [submodule "bundle/vimproc.vim"]
 	path = bundle/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
-[submodule "bundle/typescript-vim"]
-	path = bundle/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
 	url = http://github.com/editorconfig/editorconfig-vim.git
@@ -40,3 +37,6 @@
 [submodule "bundle/deoplete-typescript"]
 	path = bundle/deoplete-typescript
 	url = http://github.com/mhartington/deoplete-typescript.git
+[submodule "vim-javacomplete2"]
+	path = bundle/vim-javacomplete2
+	url = https://github.com/artur-shaik/vim-javacomplete2.git
